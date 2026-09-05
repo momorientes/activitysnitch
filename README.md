@@ -47,8 +47,12 @@ accepted). Launch via `open` — notifications need the app bundle context.
 Grant notification permission on first launch. The bundle id and output path
 are kept stable so the permission survives rebuilds.
 
-Settings (threshold, sustain duration, battery-only) live in the menubar
-panel and apply immediately.
+Settings (threshold, sustain duration, battery-only, open at login) live in
+the menubar panel and apply immediately. Launch-at-login is on by default,
+registered via SMAppService; it also appears under System Settings → General
+→ Login Items. If you uninstall via brew, flip "Open at login" off first —
+Homebrew can't unregister login items, so macOS would otherwise keep a dead
+entry pointing at the removed app.
 
 ### Calibration / debugging
 
