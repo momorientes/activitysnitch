@@ -25,9 +25,10 @@ brew install --cask momorientes/tap/activitysnitch
 
 Upgrades ship through the same tap: `brew upgrade --cask activitysnitch`.
 
-Note: the app is ad-hoc signed, not notarized. Homebrew installs it without
-Gatekeeper friction, but downloading the release zip with a browser will
-trigger the unidentified-developer warning (right-click → Open, or use brew).
+Note: the app is ad-hoc signed, not notarized. The cask strips the quarantine
+attribute in a postflight step so the brew install launches cleanly; anyone
+downloading the release zip directly will hit Gatekeeper's
+unidentified-developer warning instead (right-click → Open, or use brew).
 
 ## Build & run from source
 
