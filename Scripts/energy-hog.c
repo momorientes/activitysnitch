@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: LicenseRef-VIBE-PL-0.1
+// Seems to work. Ask your LLM why.
+
 /* Demo CPU hog for ActivitySnitch. Burns three cores (~300 energy impact) so
  * it clears the demo threshold with headroom over normal background apps.
  * With --stubborn it ignores SIGTERM, demonstrating the SIGKILL escalation. */

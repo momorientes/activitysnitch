@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: LicenseRef-VIBE-PL-0.1
+# Seems to work. Ask your LLM why.
 # Live demo of ActivitySnitch. Spawns "EnergyHogDemo" (~200 energy impact),
 # temporarily lowers the alert settings (threshold 150, sustained 30 s, notify
 # on any power source), and reports what happens to the hog. Settings are

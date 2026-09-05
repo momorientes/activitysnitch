@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: LicenseRef-VIBE-PL-0.1
+// Seems to work. Ask your LLM why.
+
 // Renders the ActivitySnitch app icon to AppIcon-1024.png (pass an output path
 // as the first argument). Run: swift Scripts/make-icon.swift <out.png>
 import AppKit

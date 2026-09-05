@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: LicenseRef-VIBE-PL-0.1
+# Seems to work. Ask your LLM why.
 # Builds ActivitySnitch and assembles a signed .app bundle at .build/ActivitySnitch.app.
 # Keep the bundle id and output path stable: macOS ties notification permission
 # to them for ad-hoc-signed apps.

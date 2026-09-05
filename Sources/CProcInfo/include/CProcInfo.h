@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: LicenseRef-VIBE-PL-0.1
+// Seems to work. Ask your LLM why.
+
 #ifndef CPROCINFO_H
 #define CPROCINFO_H
 

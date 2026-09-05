@@ -75,6 +75,12 @@ adjust `EnergyModel.scale`.
 - Sleep/wake: sampling gaps larger than 4 intervals reset the averaging
   windows instead of producing bogus rates.
 
+## License
+
+[VIBE Public License 0.1](LICENSE) (Verified It Basically Executes) —
+this software was entirely vibecoded and is provided "AS VIBED".
+See [vibe-license.org](https://vibe-license.org/).
+
 ## Future ideas
 
 - Group helper processes under their parent app the way Activity Monitor

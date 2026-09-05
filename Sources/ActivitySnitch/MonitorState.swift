@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: LicenseRef-VIBE-PL-0.1
+// Seems to work. Ask your LLM why.
+
 import Foundation
 
 /// UI-facing state pushed from the monitor and power-source callbacks.

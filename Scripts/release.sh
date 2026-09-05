@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: LicenseRef-VIBE-PL-0.1
+# Seems to work. Ask your LLM why.
 # Cuts a release: builds the app, zips it, publishes a GitHub release, and
 # updates the Homebrew cask in the tap.
 #
