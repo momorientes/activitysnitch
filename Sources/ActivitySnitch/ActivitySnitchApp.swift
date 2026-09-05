@@ -45,6 +45,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         // this covers dev runs of the bare binary.
         NSApp.setActivationPolicy(.accessory)
         Settings.registerDefaults()
+        LoginItem.apply(Settings.launchAtLogin)
         NotificationManager.shared.setUp()
         PowerSourceMonitor.startObserving()
         EnergyMonitor.shared.start()

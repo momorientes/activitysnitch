@@ -9,6 +9,7 @@ struct MenuBarView: View {
     @AppStorage(SettingsKey.threshold) private var threshold = 200.0
     @AppStorage(SettingsKey.sustainMinutes) private var sustainMinutes = 2.0
     @AppStorage(SettingsKey.onlyOnBattery) private var onlyOnBattery = true
+    @AppStorage(SettingsKey.launchAtLogin) private var launchAtLogin = true
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -102,6 +103,12 @@ struct MenuBarView: View {
 
             Toggle("Only notify on battery", isOn: $onlyOnBattery)
                 .font(.callout)
+
+            Toggle("Open at login", isOn: $launchAtLogin)
+                .font(.callout)
+                .onChange(of: launchAtLogin) { _, enabled in
+                    LoginItem.apply(enabled)
+                }
 
             Divider()
 

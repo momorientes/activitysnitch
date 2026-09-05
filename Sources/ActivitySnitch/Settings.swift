@@ -7,6 +7,7 @@ enum SettingsKey {
     static let threshold = "energyThreshold"
     static let sustainMinutes = "sustainMinutes"
     static let onlyOnBattery = "onlyOnBattery"
+    static let launchAtLogin = "launchAtLogin"
 }
 
 /// Read-side access for the monitoring engine; the UI binds the same keys via @AppStorage.
@@ -16,7 +17,12 @@ enum Settings {
             SettingsKey.threshold: 200.0,
             SettingsKey.sustainMinutes: 2.0,
             SettingsKey.onlyOnBattery: true,
+            SettingsKey.launchAtLogin: true,
         ])
+    }
+
+    static var launchAtLogin: Bool {
+        UserDefaults.standard.bool(forKey: SettingsKey.launchAtLogin)
     }
 
     static var threshold: Double {
